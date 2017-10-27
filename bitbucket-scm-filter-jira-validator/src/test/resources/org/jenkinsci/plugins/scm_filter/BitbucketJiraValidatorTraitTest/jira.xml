@@ -1,0 +1,15 @@
+<com.cloudbees.jenkins.plugins.bitbucket.BitbucketSCMSource>message.startsWith("[ci skip]") || message.startsWith("[skip ci]");
+    <id>com.cloudbees.jenkins.plugins.bitbucket.BitbucketSCMNavigator::https://bitbucket.org::jenkinsci::bitbucket-scm-filter-jira-validator</id>
+    <credentialsId>bitbucket-cloud</credentialsId>
+    <checkoutCredentialsId>SAME</checkoutCredentialsId>
+    <repoOwner>cloudbeers</repoOwner>
+    <repository>stunning-adventure</repository>
+    <includes>*</includes>
+    <excludes></excludes>
+    <autoRegisterHook>false</autoRegisterHook>
+    <sshPort>-1</sshPort>
+    <repositoryType>GIT</repositoryType>
+    <traits>
+        <org.jenkinsci.plugins.scm_filter.BitbucketJiraValidatorTrait plugin="bitbucket-scm-filter-jira-validator@${project.version}" />
+    </traits>
+</com.cloudbees.jenkins.plugins.bitbucket.BitbucketSCMSource>

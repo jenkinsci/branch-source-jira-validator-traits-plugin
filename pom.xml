@@ -8,13 +8,13 @@
         <version>2.33</version>
     </parent>
 
-    <artifactId>branch-source-jira-validator-traits</artifactId>
+    <artifactId>scm-filter-jira-validator-parent</artifactId>
     <version>0.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Branch Source Jira Validator Traits</name>
-    <url>https://wiki.jenkins-ci.org/display/JENKINS/Branch+Source+Jira+Validator+Traits+Plugin</url>
-    <description>Reactor adding an filtering strategy (to ignore pull requests without a proper jira prefix) to several Branch Source Plugin configuration.</description>
+    <name>Jira Validator SCM Filter</name>
+    <url>https://wiki.jenkins-ci.org/display/JENKINS/Jira+Validator+SCM+Filter+Plugins</url>
+    <description>Reactor adding an filtering strategy (to ignore pull requests without a proper jira ticket tag) to several SCM plugins.</description>
 
     <licenses>
         <license>
@@ -35,9 +35,9 @@
     </properties>
 
     <scm>
-        <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
-        <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
-        <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
+        <connection>scm:git:git://github.com/jenkinsci/scm-filter-jira-validator-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:jenkinsci/scm-filter-jira-validator-plugin.git</developerConnection>
+        <url>https://github.com/jenkinsci/scm-filter-jira-validator-plugin</url>
         <tag>HEAD</tag>
     </scm>
 
@@ -50,9 +50,9 @@
     </developers>
 
     <modules>
-        <module>branch-source-jira-validator-trait-common</module>
-        <module>bitbucket-source-jira-validator-trait-plugin</module>
-        <module>github-source-jira-validator-trait-plugin</module>
+        <module>scm-filter-jira-validator-common</module>
+        <module>bitbucket-scm-filter-jira-validator</module>
+        <module>github-scm-filter-jira-validator</module>
     </modules>
 
     <dependencies>
@@ -70,6 +70,13 @@
             <version>2.0.11</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>jira</artifactId>
+            <version>${jira.version}</version>
+        </dependency>
+
     </dependencies>
 
     <dependencyManagement>
