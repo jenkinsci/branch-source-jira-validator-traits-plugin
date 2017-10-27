@@ -8,7 +8,7 @@
     </parent>
 
     <artifactId>scm-filter-jira-validator-parent</artifactId>
-    <version>0.1.0</version>
+    <version>0.2.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Jira Validator SCM Filter</name>
@@ -37,7 +37,7 @@
         <connection>scm:git:git://github.com/jenkinsci/scm-filter-jira-validator-plugin.git</connection>
         <developerConnection>scm:git:git@github.com:jenkinsci/scm-filter-jira-validator-plugin.git</developerConnection>
         <url>https://github.com/jenkinsci/scm-filter-jira-validator-plugin</url>
-        <tag>0.1.0</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <developers>
