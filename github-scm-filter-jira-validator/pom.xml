@@ -14,13 +14,6 @@
     <url>https://wiki.jenkins-ci.org/display/JENKINS/GitHub+Jira+Validator+SCM+Filter+Plugin</url>
     <description>Adds a filtering trait according to the pull request title (enforcing it contains a single and open jira ticket) to an existing GitHub Branch Source Plugin configuration.</description>
 
-    <scm>
-        <connection>scm:git:git://github.com/jenkinsci/scm-filter-jira-validator-plugin.git</connection>
-        <developerConnection>scm:git:git@github.com:jenkinsci/scm-filter-jira-validator-plugin.git</developerConnection>
-        <url>https://github.com/jenkinsci/scm-filter-jira-validator-plugin</url>
-        <tag>HEAD</tag>
-    </scm>
-
     <dependencies>
 
         <dependency>
