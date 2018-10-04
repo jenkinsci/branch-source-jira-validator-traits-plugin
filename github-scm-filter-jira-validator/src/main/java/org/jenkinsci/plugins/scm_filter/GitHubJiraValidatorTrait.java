@@ -2,6 +2,7 @@ package org.jenkinsci.plugins.scm_filter;
 
 import edu.umd.cs.findbugs.annotations.NonNull;
 import hudson.Extension;
+import org.jenkinsci.Symbol;
 import hudson.util.ListBoxModel;
 import jenkins.scm.api.SCMHead;
 import jenkins.scm.api.trait.SCMBuilder;
@@ -38,7 +39,7 @@ public class GitHubJiraValidatorTrait extends JiraValidatorTrait {
     /**
      * Our descriptor.
      */
-    @Extension
+    @Extension @Symbol("gitHubJiraValidatorTrait")
     @SuppressWarnings("unused") // instantiated by Jenkins
     public static class DescriptorImpl extends JiraValidatorDescriptorImpl {
 
